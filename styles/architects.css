@@ -124,17 +124,24 @@ main > section{
     .teams{
         flex-direction: column;
     }
-    .team-image{
+    .team-image,.fact-container{
     grid-template-columns: repeat(1,1fr);
     }
     .our-feature{
         margin-left: 20px;
+    }
+    .fact-container{
+        justify-items: center;
+        gap:24px;
     }
 }
 @media screen and (min-width:576px) and (max-width
 :992px){
     .teams{
         flex-direction: column;
+    }
+    .fact-container{
+    grid-template-columns: repeat(2,1fr);
     }
     .our-feature{
         margin:20px auto;
