@@ -88,6 +88,38 @@ main > section{
     margin-left: 130px;
     max-width:537px;
 }
+/* Feature related style */
+#title-style{
+    border-left:5px solid #FF900E;
+    padding-left:20px;
+}
+.features{
+    gap:140px;
+}
+.features .feature-card{
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow:0 4px 30px 0 rgba(0,0,0,0.06) ;
+    border-radius: 8px;
+}
+.feature-card .feature-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#badge{
+    padding :45px 42px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+.year{
+    font-size: 3.7rem;
+    font-weight: 700;
+}
+
 /* some fact related style */
 .fact-container{
     display: grid;
@@ -117,26 +149,6 @@ main > section{
 .fact-des{
     max-width: 540px;
 }
-/* Feature related style */
-#title-style{
-    border-left:5px solid #FF900E;
-    padding-left:20px;
-}
-.features{
-    gap:140px;
-}
-.features .feature-card{
-    padding: 30px;
-    margin-bottom: 20px;
-    box-shadow:0 4px 30px 0 rgba(0,0,0,0.06) ;
-    border-radius: 8px;
-}
-.feature-card .feature-title{
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
 /* Sponsor related style */
 .sponsor-info{
     max-width: 540px;
@@ -152,12 +164,30 @@ main > section{
 .sponsor-companies img {
   filter: grayscale(100%);
 }
-
+.archi img{
+    width:100%
+}
+/* footer style */
+.copyright{
+    max-width: 1440px;
+    width: 100%;
+    margin:0 auto;
+}
+.footer-style{
+    margin-top: 50px;
+    background-color:rgba(255, 144, 14, 0.1) ;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    border-radius: 12px;
+}
 /* Responsive media query */
 @media screen and (max-width:576px) {
     .navbar,
     .nav-links,
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
     .team-image,
@@ -172,11 +202,20 @@ main > section{
         justify-items: center;
         gap:24px;
     }
+    #badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 @media screen and (min-width:576px) and (max-width
 :992px){
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
+    }
+    #badge,.fact-card{
+        margin-top: 20px;
+        margin-left: 20px;
     }
     .fact-container{
     grid-template-columns: repeat(2,1fr);
